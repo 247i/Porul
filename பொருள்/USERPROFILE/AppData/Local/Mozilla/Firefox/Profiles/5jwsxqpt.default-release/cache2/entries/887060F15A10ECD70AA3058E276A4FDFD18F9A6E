@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<TITLE>Free and open source MIDI sequencer / editor software "Sekaiju"</TITLE>
+<META charset="UTF-8">
+<META name="Description" content="">
+<META name="Keywords" content="">
+<META name="Author" content="kuzu">
+<META name="viewport" content="width=device-width, initial-scale=1">
+<LINK rel="stylesheet" type="text/css" href="style.css">
+</HEAD>
+
+<BODY>
+
+<script type="text/javascript" src="alog.js"></script>
+
+<H1>OpenMIDIProject</H1>
+
+<P CLASS="CENTER"><A HREF="index_en.html">Home</A> | <A HREF="news_en.html">News</A> | <A HREF="forums_en.html">Forums</A> | <A HREF="documentations_en.html">Documentations</A> | <A HREF="faq_en.html">FAQ</A> | <A HREF="links_en.html">Links</A> | <A HREF="contributors_en.html">Contributors</A> | <A HREF="author_en.html">Author</A></P>
+
+<P CLASS="CENTER"><A HREF="Sekaiju.html">Japanese</A> | English | <A HREF="Sekaiju_chs.html">Chinese</A></P>
+
+<HR>
+
+<H3>MIDI sequencer / editor software "Sekaiju"</H3>
+
+<IMG CLASS="autocenter" SRC="img/Sekaiju4.1_en_S.png" ALT="A screenshot of Sekaiju, free and open source MIDI sequencer software.">
+
+<P>"Sekaiju" is free, open source MIDI sequencer / editor software for creating and editing MIDI data. You can record MIDI keyboard or synthesizer's playing to the computer, and you can compose music to play with your MIDI modules or synthesizers. Since it allows to edit all kind of event, and has unlimited undo and redo feature, Sekaiju also can be used as a powerful MIDI editor. A real-time input feature which can input each MIDI channel messages into spearated tracks at the same time is received well.<!-- Since Sekaiju5.1, an external extension program <A HREF="https://kuzudeveloproom.sakura.ne.jp/sal/index_en.html">SAL (Sekaiju Application Language)</A> which enables you to make user-defined editing feature is supported.--></P>
+
+
+<P CLASS="CENTER"><A HREF="mp3/Test0004.mp3">■Example music created by using "Sekaiju" MIDI sequencer</A> (MP3 format, Composer : kuzu)</P>
+
+<UL>
+ <LI>Adopt multi document method, which can open a lot of MIDI data all at once and can change playing music immediately.</LI>
+ <LI>Come with track list window, piano roll window, event list window, and musical score window, which supports multiple track concurrent editing.</LI>
+ <LI>Each window has print preview and print feature.</LI>
+ <LI>Able to operate such as input, edit and save while keeping playing MIDI data.</LI>
+ <LI>All kind of MIDI events including meta event and system-exclusive event are editable.</LI>
+ <LI>Unlimited undo and redo.</LI>
+ <LI>Editing features such as modify events's track, time, channel, key, velocity, duration, value, and channel all at once.</LI>
+ <LI>Editing features such as quantize, beat scan and adjust by tempo, make stroke, break up note and make trill.</LI>
+ <LI>Support an external extension program <A HREF="https://kuzudeveloproom.sakura.ne.jp/sal/index_en.html">SAL (Sekaiju Application Language)</A> which enables you to make user-defined editing feature.</LI>
+ <LI>Both TPQN base at the resolution (time-base) from 1 to 960 and SMPTE24/25/29.97/30 base at the resolution 1 to 255 is supported. Time mode and resolution can be changed at any time.</LI>
+ <LI>Sekaiju sequence file(*.skj) load and save.</LI>
+ <LI>Early Cakewalk sequence file(*.wrk) load.</LI>
+ <LI>Cherry sequence file(*.chy) load and save.</LI>
+ <LI>Standard MIDI file(*.mid) format 0/1/2 load and save.</LI>
+ <LI>MIDICSV file(*.csv) load and save.</LI>
+ <LI>Mabinogi MML file(*.mmml) load.</LI>
+ <LI>Auto back up(from 1 minute to 120 minutes interval).</LI>
+ <LI>16 MIDI input ports and 16 MIDI output ports can be used at the same time.</LI>
+ <LI>Real time input feature which can input each MIDI channel message into sparated tracks at the same time.</LI>
+ <LI>Auto repeat from CC#111 position, which is used as a repeat marker in "RPGMaker" software.</LI>
+ <LI>Auto repeat from "loopStart" upto "loopEnd" marker, which is used in FINAL FANTASY VII.</LI>
+ <LI>Intelligent playback which prevents garbled sound, wherever position you started. </LI>
+ <LI>Synchronized recording which starts at your keyboard playing.</LI>
+ <LI>MIDI Timing clock for syncronizing may be received and sent.</LI>
+ <LI>Instrument definitions are compatible with Cakewalk's instrument definition file(*.ins).</LI>
+ <LI>Only extracting zip file is required to execute. No need to install.</LI>
+ <LI>User interface and docoumentations are Japanese, English, and Chinese compliant.</LI>
+ <LI>User interface is Windows XP / Vista / 7 / 8.1's theme compliant.</LI>
+ <LI>YAMAHA XF / SMF with Lyrics (RP-026) compliant.</LI>
+ <LI>Unicode compliant.</LI>
+</UL>
+
+<P>Please note:</P>
+<P>Sekaiju is made in Japan, therefore default GUI language is Japanese. Here shows two way to change to English.</P>
+<P>(a) Select "設定(S)" - "言語(Language)" from the menu and select "English" in the language dialog, and restart Sekaiju. If the menu gets character corruption, press [Alt]+[S] and then [Alt]+[L], and you'll open the dialog.</P>
+<P>(b) Open "Sekaiju.ini" in your text editor, change "UserInterface=Japanese" to "UserInterface=English", and then save it, and then execute Sekaiju.exe</P>
+
+
+<DIV CLASS="SCROLL">
+<TABLE>
+ <TR>
+  <TH CLASS="W025">Name</TH>
+  <TH CLASS="W025">OS</TH>
+  <TH CLASS="W020">FileName</TH>
+  <TH CLASS="W015">Release day</TH>
+  <TH CLASS="W015">Size</TH>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.net/projects/openmidiproject/downloads/71109/Sekaiju5.7.zip">■Sekaiju5.7</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju5.7.zip</TD>
+  <TD>2019/05/19</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.net/projects/openmidiproject/downloads/70479/Sekaiju5.6.zip">■Sekaiju5.6</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju5.6.zip</TD>
+  <TD>2019/01/03</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.net/projects/openmidiproject/downloads/69826/Sekaiju5.5.zip">■Sekaiju5.5</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju5.5.zip</TD>
+  <TD>2018/07/23</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.net/projects/openmidiproject/downloads/69629/Sekaiju5.4.zip">■Sekaiju5.4</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju5.4.zip</TD>
+  <TD>2018/06/03</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.net/projects/openmidiproject/downloads/69347/Sekaiju5.3.zip">■Sekaiju5.3</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju5.3.zip</TD>
+  <TD>2018/04/15</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.net/projects/openmidiproject/downloads/69055/Sekaiju5.2.zip">■Sekaiju5.2</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju5.2.zip</TD>
+  <TD>2018/02/25</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.net/projects/openmidiproject/downloads/68765/Sekaiju5.1.zip">■Sekaiju5.1</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju5.1.zip</TD>
+  <TD>2017/12/03</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://ja.osdn.net/projects/openmidiproject/downloads/67752/Sekaiju5.0.zip">■Sekaiju5.0</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju5.0.zip</TD>
+  <TD>2017/05/28</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/66800/Sekaiju4.9.zip">■Sekaiju4.9</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju4.9.zip</TD>
+  <TD>2016/12/04</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/65761/Sekaiju4.8.zip">■Sekaiju4.8</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju4.8.zip</TD>
+  <TD>2016/05/08</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/65647/Sekaiju4.7.zip">■Sekaiju4.7</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1 / 10</TD>
+  <TD>Sekaiju4.7.zip</TD>
+  <TD>2016/04/17</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/64336/Sekaiju4.6.zip">■Sekaiju4.6</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju4.6.zip</TD>
+  <TD>2016/01/17</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/63237/Sekaiju4.5.zip">■Sekaiju4.5</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju4.5.zip</TD>
+  <TD>2015/05/04</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62602/Sekaiju4.4.zip">■Sekaiju4.4</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju4.4.zip</TD>
+  <TD>2015/01/25</TD>
+  <TD>18.1MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62327/Sekaiju4.3.zip">■Sekaiju4.3</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju4.3.zip</TD>
+  <TD>2014/11/23</TD>
+  <TD>13.7MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62326/Sekaiju4.2.zip">■Sekaiju4.2</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju4.2.zip</TD>
+  <TD>2014/09/07</TD>
+  <TD>13.7MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62325/Sekaiju4.1.zip">■Sekaiju4.1</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju4.1.zip</TD>
+  <TD>2014/06/08</TD>
+  <TD>13.7MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62324/Sekaiju4.0.zip">■Sekaiju4.0</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju4.0.zip</TD>
+  <TD>2014/05/25</TD>
+  <TD>13.7MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62323/Sekaiju3.9.zip">■Sekaiju3.9</A></TD>
+  <TD>Windows XP / Vista / 7/ 8.1</TD>
+  <TD>Sekaiju3.9.zip</TD>
+  <TD>2013/11/19</TD>
+  <TD>13.4MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62322/Sekaiju3.8.zip">■Sekaiju3.8</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju3.8.zip</TD>
+  <TD>2013/11/10</TD>
+  <TD>13.4MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62321/Sekaiju3.7.zip">■Sekaiju3.7</A></TD>
+  <TD>Windows XP / Vista / 7 / 8.1</TD>
+  <TD>Sekaiju3.7.zip</TD>
+  <TD>2013/09/16</TD>
+  <TD>12.6MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62320/Sekaiju3.6.zip">■Sekaiju3.6</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju3.6.zip</TD>
+  <TD>2013/05/05</TD>
+  <TD>6.28MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62319/Sekaiju3.5.zip">■Sekaiju3.5</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju3.5.zip</TD>
+  <TD>2013/03/03</TD>
+  <TD>6.14MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62317/Sekaiju3.4.zip">■Sekaiju3.4</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju3.4.zip</TD>
+  <TD>2012/12/02</TD>
+  <TD>6.02MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62316/Sekaiju3.3.zip">■Sekaiju3.3</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju3.3.zip</TD>
+  <TD>2012/09/30</TD>
+  <TD>5.94MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62315/Sekaiju3.2.zip">■Sekaiju3.2</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju3.2.zip</TD>
+  <TD>2012/08/19</TD>
+  <TD>5.94MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62314/Sekaiju3.1.zip">■Sekaiju3.1</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju3.1.zip</TD>
+  <TD>2012/07/07</TD>
+  <TD>5.92MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62313/Sekaiju3.0.zip">■Sekaiju3.0</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju3.0.zip</TD>
+  <TD>2012/04/22</TD>
+  <TD>5.92MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62311/Sekaiju2.9.zip">■Sekaiju2.9</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.9.zip</TD>
+  <TD>2012/03/04</TD>
+  <TD>5.92MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62310/Sekaiju2.8.zip">■Sekaiju2.8</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.8.zip</TD>
+  <TD>2012/02/10</TD>
+  <TD>5.90MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62331/Sekaiju2.7.zip">■Sekaiju2.7</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.7.zip</TD>
+  <TD>2012/01/10</TD>
+  <TD>5.90MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62330/Sekaiju2.6.zip">■Sekaiju2.6</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.6.zip</TD>
+  <TD>2011/11/06</TD>
+  <TD>5.84MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62308/Sekaiju2.5.zip">■Sekaiju2.5</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.5.zip</TD>
+  <TD>2011/06/05</TD>
+  <TD>5.84MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62307/Sekaiju2.4.zip">■Sekaiju2.4</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.4.zip</TD>
+  <TD>2011/05/08</TD>
+  <TD>5.84MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62306/Sekaiju2.3.zip">■Sekaiju2.3</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.3.zip</TD>
+  <TD>2011/03/06</TD>
+  <TD>5.79MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62305/Sekaiju2.2.zip">■Sekaiju2.2</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.2.zip</TD>
+  <TD>2011/02/05</TD>
+  <TD>5.66MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62304/Sekaiju2.1.zip">■Sekaiju2.1</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.1.zip</TD>
+  <TD>2010/07/30</TD>
+  <TD>5.46MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62303/Sekaiju2.0.zip">■Sekaiju2.0</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju2.0.zip</TD>
+  <TD>2010/06/06</TD>
+  <TD>5.43MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62302/Sekaiju1.9.zip">■Sekaiju1.9</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.9.zip</TD>
+  <TD>2010/05/04</TD>
+  <TD>3.32MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62301/Sekaiju1.8.zip">■Sekaiju1.8</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.8.zip</TD>
+  <TD>2010/02/28</TD>
+  <TD>3.30MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62299/Sekaiju1.7.zip">■Sekaiju1.7</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.7.zip</TD>
+  <TD>2010/02/02</TD>
+  <TD>3.28MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62298/Sekaiju1.6.zip">■Sekaiju1.6</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.6.zip</TD>
+  <TD>2010/01/03</TD>
+  <TD>3.03MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62297/Sekaiju1.5.zip">■Sekaiju1.5</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.5.zip</TD>
+  <TD>2009/12/13</TD>
+  <TD>2.92MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62295/Sekaiju1.4.zip">■Sekaiju1.4</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.4.zip</TD>
+  <TD>2009/09/06</TD>
+  <TD>2.64MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62294/Sekaiju1.3.zip">■Sekaiju1.3</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.3.zip</TD>
+  <TD>2009/07/14</TD>
+  <TD>2.57MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62293/Sekaiju1.2.zip">■Sekaiju1.2</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.2.zip</TD>
+  <TD>2009/07/05</TD>
+  <TD>2.57MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62292/Sekaiju1.1.zip">■Sekaiju1.1</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.1.zip</TD>
+  <TD>2009/01/17</TD>
+  <TD>2.43MB</TD>
+ </TR>
+ <TR>
+  <TD><A HREF="https://osdn.jp/projects/openmidiproject/downloads/62291/Sekaiju1.0.zip">■Sekaiju1.0</A></TD>
+  <TD>Windows 2000 / XP / Vista / 7</TD>
+  <TD>Sekaiju1.0.zip</TD>
+  <TD>2008/12/27</TD>
+  <TD>2.42MB</TD>
+ </TR>
+</TABLE>
+</DIV>
+
+<P>Older version than Sekaiju 1.0 has been stopped releasing because of rough-around-the-edges, sorry.</P>
+
+<HR>
+
+<P CLASS="CENTER">
+(C)2002-2019 kuzu / openmidiproject
+<a href="https://osdn.jp/"><img src="https://osdn.jp/sflogo.php?group_id=3293" width=96 height=31 alt="OSDN"></a>
+</P>
+
+</BODY>
+</HTML>
+
+�~|      ]EA]EA@�s�]N{�   0    :https://openmidiproject.osdn.jp/Sekaiju_en.html necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Date: Sat, 03 Aug 2019 08:08:37 GMT
+Server: Apache/2.4.10 (Debian)
+Last-Modified: Sat, 11 May 2019 09:30:16 GMT
+ETag: "4371-5889954b3da00"
+Accept-Ranges: bytes
+Content-Length: 17265
+Content-Type: text/html
+Content-Language: ja
+ original-response-headers Date: Sat, 03 Aug 2019 08:08:37 GMT
+Server: Apache/2.4.10 (Debian)
+Last-Modified: Sat, 11 May 2019 09:30:16 GMT
+ETag: "4371-5889954b3da00"
+Accept-Ranges: bytes
+Content-Length: 17265
+Keep-Alive: timeout=1, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Language: ja
+ ctid 1 uncompressed-len 0 net-response-time-onstart 776 net-response-time-onstop 778 predictor::resource-count 6 predictor::https://openmidiproject.osdn.jp/style.css 1,1,1564819715,4096 predictor::https://openmidiproject.osdn.jp/alog.js 1,1,1564819715,4096 predictor::https://openmidiproject.osdn.jp/img/Sekaiju4.1_en_S.png 1,1,1564819715,4096 predictor::https://osdn.jp/sflogo.php?group_id=3293 1,1,1564819715,4096 predictor::https://openmidiproject.osdn.jp/back04.jpg 1,1,1564819715,4096 predictor::https://openmidiproject.osdn.jp/cgi-bin/alog.php?url=https://openmidiproject.osdn.jp/Sekaiju_en.html&ref=https://openmidiproject.osdn.jp/index_en.html&width=1600&height=900&depth=24 1,1,1564819715,4096   Cq

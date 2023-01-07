@@ -1,0 +1,26 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.19t|$
+Arch|x86_64-msvc|$
+
+[PLUGINS]
+NPSWF64_32_0_0_223.dll|$
+C:\WINDOWS\system32\Macromed\Flash\NPSWF64_32_0_0_223.dll|$
+32.0.0.223|$
+1563641143045|0|0|0|0|$
+Shockwave Flash 32.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+
+[INVALID]
+C:\Program Files\Microsoft Silverlight\5.1.50918.0\npctrl.dll|$
+1540306588000|$
+C:\Program Files\Microsoft Silverlight\5.1.50918.0\npctrlui.dll|$
+1540306588000|$
+C:\Users\inthirua\AppData\Local\Microsoft\SkypeForBusinessPlugin\16.2.0.496\npGatewayNpapi-x64.dll|$
+1558553782000|$
+C:\Users\inthirua\AppData\Local\Microsoft\SkypeForBusinessPlugin\16.2.0.496\npGatewayNpapi.dll|$
+1558553792000|$
